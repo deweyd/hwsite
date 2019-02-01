@@ -1,0 +1,113 @@
+form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10% 20%;
+  background: white;
+  border: 1px solid red;
+  border-radius: 5px;
+  position: relative;
+}
+.vehicle{
+  color: red;
+  font-size: 25px;
+  margin: 20px 100px;
+  font-family: muller-bold-extra,sans-serif;
+  text-align: center;
+}
+label{
+  color: black;
+  font-size: 25px;
+  margin: 5px;
+  font-weight: 500;
+  font-family: muller-bold,sans-serif;
+}
+input{
+border-radius: 5px;
+  border: 2px solid red;
+  width: 50%;
+  height: 30px;
+  padding: 5px;
+}
+input[placeholder]{
+  font-size: 15px;
+  font-family: muller-light,sans-serif;
+  outline: none;
+}
+button{
+  margin: 10px 5px 50px;
+  color: white;
+  background: red;
+  border: 1px solid white;
+  border-radius: 5px;
+  padding: 10px 35px;
+}
+.clouse{
+  color: black;
+  position: absolute;
+  right: 10px;
+  top:10px;
+  cursor: pointer;
+}
+.fa-check-circle{
+  color: green;
+  margin-left: 10px;
+  display: block;
+}
+.fa-exclamation-circle{
+  color: red;
+  margin-left: 10px;
+  display: block;
+}
+.sp-year,.sp-year-er,.sp-make,.sp-make-er,.sp-tel,.sp-tel-er,.sp-model,.sp-model-er,.sp-email,.sp-email-er{
+  display: none;
+}
+
+
+//.new-form{
+//  display: flex;
+//  flex-direction: column;
+//  width: 300px;
+//  margin: 40px auto;
+//  input{
+//    margin-bottom: 10px;
+//    outline: none;
+//  }
+//}
+.popup{
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index:100;
+  background-color: rgba(0,0,0,0.8);
+  display: none;
+
+
+}
+.popup-on{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  form{
+    animation: on 0.5s;
+  }
+}
+.success-window{
+  display: none;
+  color: #fff;
+  position: relative;
+  font-size: 50px;
+  z-index: 100;
+
+}
+@keyframes on {
+  from{
+    transform: scale(0.5);
+  }
+  to{
+    transform: scale(1);
+  }
+}
